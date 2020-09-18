@@ -1,0 +1,201 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+	<category>
+	        <pattern>HOLA</pattern>
+	        <template>
+	        	<random>
+				<li>Hola, un gusto</li>
+				<li>
+					Hola, ¿Como estas?
+				</li>
+				<li>Hola, preguntame tus dudas en matematicas o programacion</li>
+				<li>Hola, que te gustaria saber?</li>
+	        	</random>
+	        </template>
+   	 </category>
+
+ 	<category>
+		<pattern>ASIGNATURAS</pattern>
+		<template> 
+		Te proporcionare temas de las siguientes asignaturas: 
+		Matematicas I, Matematicas II, Estadistica, Calculo, Informatica I, Informatica II, Informatica III
+		 </template>
+	</category>
+	
+
+	//Asignaturas
+	//Matematicas I
+	<category>
+		<pattern>MATEMATICAS I</pattern>
+		<template>
+			Los temas son los siguientes:  Polinomios, expresiones racionales y ecuaciones racionales
+		</template>
+	</category>
+
+
+	//Informatica I
+	<category>
+		<pattern>INFORMATICA I</pattern>
+		<template>
+			Los temas son los siguientes:  Procesador de Textos, búsqueda de información y presentaciones digitales
+		</template>
+	</category>
+
+
+	//Matematicas II
+	<category>
+		<pattern>MATEMATICAS II</pattern>
+		<template>
+			Los temas son los siguientes:  Geometría euclideana y geometría cartesiana plana
+		</template>
+	</category>
+
+	//Informatica II
+	<category>
+		<pattern>INFORMATICA II</pattern>
+		<template>
+			Los temas son los siguientes: Hojas de calculo y Programacion en C
+		</template>
+
+	</category>
+
+	//Estadistica 
+	<category>
+		<pattern>MATEMATICAS II</pattern>
+		<template>
+			Los temas son los siguientes: Variable aleatoria, distribucion discreta, distribucion normal y muestreo
+		</template>
+	</category>
+
+	//Informatica III
+	<category>
+		<pattern>INFORMATICA III</pattern>
+		<template>
+			Los temas son los siguientes: Base de datos, Programacion en C, Internet
+		</template>
+
+	</category>
+
+	
+	//Temas
+	<category>
+		<pattern>POLINOMIOS</pattern>
+		<template>
+			Se consideran expresiones algebraicas aquellas donde los números y las variables aparecen relacionados por cualquiera de las operaciones de cálculo.
+			Ejemplo: (3x)^2+y es una expresion algebraica
+		</template>
+	</category>
+	
+	<category>
+		<pattern>EXPRESIONES RACIONALES</pattern>
+		<template>
+			Las expresiones racionales son fracciones que tienen un polinomio en el numerador o en el denominador o en ambos.
+			Ejemplo: (3x+2)/(x-4)
+		</template>
+	</category>
+	
+	<category>
+		<pattern>ECUACIONES RACIONALES</pattern>
+		<template>
+			Son aquellas ecuaciones en las que nos aparece una “x” en el denominador.Para resolver este tipo de ecuaciones tenemos que tener en cuenta que los numeradores algebraicos, se suprimen multiplicando por su mínimo común múltiplo. 
+			Ejemplo: (3x+2)/(x-4) = (2x-2)/(x+3)
+		</template>
+	</category>
+
+	<category>
+		<pattern>PROCESADOR DE TEXTOS</pattern>
+		<template>
+			Un procesador de texto es una aplicación informática que permite crear y editar documentos de texto en una computadora. Se trata de un software de múltiples funcionalidades para la redacción, con diferentes tipografías, tamaños de letra, 				colores, tipos de párrafos, efectos artísticos y otras opciones. Word es un ejemplo.
+		</template>
+	</category>	
+
+	<category>
+		<pattern>BUSQUEDA DE INFORMACION</pattern>
+		<template>
+			 Es la ciencia de la búsqueda de información en documentos electrónicos y cualquier tipo de colección documental digital, encargada de la búsqueda dentro de éstos mismos, búsqueda de metadatos que describan documentos, o también la 				búsqueda en bases de datos relacionales con el objetivo realiza la recuperación en textos, imágenes, sonido o datos de 				tras características, de manera pertinente y relevante.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>PRESENTACIONES DIGITALES</pattern>
+		<template>
+			Una presentación digital es una herramienta muy sencilla y eficaz para comunicar ideas. Consta de una serie de imágenes que pueden ir acompañadas no sólo de texto sino también de gráficos y de interactividad y que se muestran en forma de 				diapositivas. Un ejemplo es Power Point.
+		</template>
+	</category>
+
+	<category>
+		<pattern>GEOMETRIA EUCLIDEANA</pattern>
+		<template>
+			Es aquella que estudia las propiedades geométricas del plano afín euclídeo real y del espacio afín euclídeo tridimensional real mediante el método sintético, introduciendo los cinco postulados de Euclides.
+		</template>
+	</category>
+
+	<category>
+		<pattern>GEOMETRIA CARTESIANA PLANA</pattern>
+		<template>
+			Trabajar con planos cartesiano los cuales estan formados por dos rectas numéricas perpendiculares, una horizontal y otra vertical que se cortan en un punto. La recta horizontal es llamada eje de las abscisas o de las equis (x), y la 				vertical, eje de las ordenadas o de las yes, (y); el punto donde se cortan recibe el nombre de origen.
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOJAS DE CALCULO</pattern>
+		<template>
+			Una hoja de cálculo es un tipo de documento que permite manipular datos alfanuméricos dispuestos en forma de tablas compuestas por celdas, las cuales se suelen organizar en una matriz bidimensional de filas y columnas. La 				celda es la unidad básica de información en la hoja de cálculo, donde se insertan los valores y las fórmulas que 				realizan los cálculos. Excel es un ejemplo
+		</template>
+	</category>	
+
+	<category>
+		<pattern>PROGRAMACION EN C</pattern>
+		<template>
+			C es un lenguaje de programación de larga historia si lo comparamos con otros surgidos más recientemente. C ha tenido distintos usos a lo largo de la historia, con aplicaciones en sistemas operativos, compiladores y desarrollo de 			software. 
+			Proximamente mas informacion.
+		</template>
+	</category>
+
+	<category>
+		<pattern>VARIABLE ALEATORIA</pattern>
+		<template>
+			Es una función que asigna un valor, usualmente numérico, al resultado de un experimento aleatorio. Por ejemplo, los posibles resultados de tirar un dado dos veces: (1, 1), (1, 2), etc. o un número real (la temperatura máxima 				medida a lo largo del día en una ciudad concreta).
+		</template>
+	</category>
+
+	<category>
+		<pattern>DISTRIBUCION DISCRETA</pattern>
+		<template>
+			Una distribución discreta es una lista de los diferentes valores numéricos de la variable de interés y sus probabilidades asociadas. Las probabilidades deben sumar 1. Para el ejemplo de los automóviles, las probabilidades de 				números específicos de vehículos se muestran a continuación: 
+			0-0.1, 1-0.3, 2-0.7, 3-0.1, 4-0.04
+			
+		</template>
+	</category>
+
+	<category>
+		<pattern>DISTRIBUCION NORMAL</pattern>
+		<template>
+			Se trata del modelo continuo más importante en estadística, tanto por su aplicación directa, veremos que muchas variables de interés general pueden describirse por dicho modelo, como por sus propiedades, que han permitido el 				desarrollo de numerosas técnicas de inferencia estadística. En realidad, el nombre de Normal proviene del hecho de que 				durante un tiempo se creyó, por parte de médicos y biólogos, que todas las variables naturales de interés seguían este 				modelo.
+		</template>
+	</category>
+
+	<category>
+		<pattern>MUESTREO</pattern>
+		<template>
+			Es una herramienta de la investigación cuya función es determinar qué parte de una población o universo debe examinarse para hacer inferencias sobre ella. Existen dos tipos, los muestreos no probabilísticos y los muestreos probabilísticos, 			pero en esta oportunidad hablaremos del muestreo probabilístico.
+		</template>
+	</category>
+
+	<category>
+		<pattern>BASE DE DATOS</pattern>
+		<template>
+			Las bases de datos son el producto de la necesidad humana de almacenar la información, es decir, de preservarla contra el tiempo y el deterioro, para poder acudir a ella posteriormente. En ese sentido, la aparición de la electrónica y la 				computación brindó el elemento digital indispensable para almacenar enormes cantidades de datos en espacios físicos 				limitados, gracias a su conversión en señales eléctricas o magnéticas.
+		</template>
+	</category>
+
+	<category>
+		<pattern>INTERNET</pattern>
+		<template>
+			El internet es un conjunto descentralizado de redes de comunicación interconectadas que utilizan la familia de protocolos TCP/IP, lo cual garantiza que las redes físicas heterogéneas que la componen formen una red lógica única de 				alcance mundial. 
+		</template>
+	</category>
+
+
+</aiml>
