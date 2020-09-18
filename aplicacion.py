@@ -8,8 +8,8 @@ kernel.learn("hola.xml")
 kernel.respond("cargar aiml b")
 
 app = Flask(__name__)
-TokenDeAcceso = 'EAAFRBKfMqiIBAOw8F3VhaC6upDwP7gmU9A6ni6GKEZByW0OiaRkKWUvbZA8c2Gb3zLo7eVdR4I24WWkxwzq4OWWnzcSDEGr2Sbpfyi7KgwhdP3ebQlSEkMMdLF7VckZAc52uj3Cln5mQ4mRLJEmuZCeyD5GjjEof1ETBUkVMbwZDZD'
-TokenDeVerificacion = 'tokenprueba' 
+TokenDeAcceso = os.environ['TokenDeAcceso']
+TokenDeVerificacion = os.environ['TokenDeVerificacion'] 
 bot = Bot(TokenDeAcceso)
  
 @app.route("/", methods=['GET', 'POST'])
