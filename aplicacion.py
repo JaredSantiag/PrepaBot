@@ -7,12 +7,12 @@ kernel = aiml.Kernel()
 kernel.learn("hola.xml")
 kernel.respond("cargar aiml b")
 
-app = Flask(__name__)
+aplicacion = Flask(__name__)
 TokenDeAcceso = os.environ['TokenDeAcceso']
 TokenDeVerificacion = os.environ['TokenDeVerificacion'] 
 bot = Bot(TokenDeAcceso)
  
-@app.route("/", methods=['GET', 'POST'])
+@aplicacion.route("/", methods=['GET', 'POST'])
 def recibirMensaje():
     if request.method == 'GET':
         tokenDeEnvio = request.args.get("hub.verify_token")
@@ -47,4 +47,4 @@ def enviarMensaje(remitenteID, respuesta):
     return "Mensaje enviado con exito"
 
 if __name__ == "__main__":
-    app.run()
+    aplicacion.run()
