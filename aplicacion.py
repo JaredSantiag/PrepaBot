@@ -8,25 +8,25 @@ kernel.learn("hola.xml")
 kernel.respond("cargar aiml b")
 
 aplicacion = Flask(__name__)
-TokenDeAcceso = os.environ['TokenDeAcceso']
-TokenDeVerificacion = os.environ['TokenDeVerificacion'] 
+TokenDeAcceso = os.environ["TokenDeAcceso"]
+TokenDeVerificacion = os.environ["TokenDeVerificacion"] 
 bot = Bot(TokenDeAcceso)
  
-@aplicacion.route("/", methods=['GET', 'POST'])
+@aplicacion.route("/", methods=["GET", "POST"])
 def recibirMensaje():
-    if request.method == 'GET':
+    if request.method == "GET":
         tokenDeEnvio = request.args.get("hub.verify_token")
         return tokenFacebook(tokenDeEnvio)
     
     else:
        output = request.get_json()
-       for event in output['entry']:
-          mensajeria = event['messaging']
+       for event in output["entry"]:
+          mensajeria = event["messaging"]
           for mensaje in mensajeria:
-            if mensaje.get('message'):
-                remitenteID = mensaje['sender']['id']
-                if mensaje['message'].get('text'):
-                    mensaje = mensaje['message'].get('text')
+            if mensaje.get("message"):
+                remitenteID = mensaje["sender"]["id"]
+                if mensaje["message"].get("text"):
+                    mensaje = mensaje["message"].get("text")
                     respuestatext = obtenerMensajeBot(mensaje)
                     enviarMensaje(remitenteID, respuestatext)
 
@@ -36,7 +36,7 @@ def recibirMensaje():
 def tokenFacebook(tokenDeEnvio):
     if tokenDeEnvio == TokenDeVerificacion:
         return request.args.get("hub.challenge")
-    return 'Token de Verificacion Invalido'
+    return "Token de Verificacion Invalido"
 
 def obtenerMensajeBot(mensaje1):
     print (mensaje1)
